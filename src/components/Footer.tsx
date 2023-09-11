@@ -1,8 +1,9 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './Footer.css';
-import { Button } from './Button';
+
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 ////////////////////////////////////
 /*
 export const ContactUs = () => {
@@ -34,7 +35,7 @@ export const ContactUs = () => {
 function Footer() {
     const form = useRef();
   
-    const sendEmail = (e) => {
+    const sendEmail = (e: { preventDefault: () => void; }) => {
       e.preventDefault();
   
       emailjs.sendForm('service_s99wtwd', 'template_exhdgod', form.current, 'yy9EmUFAAGuR5xMeo')

@@ -3,7 +3,7 @@ import './Button.css';
 import { Link } from 'react-router-dom';
 
 
-export const ButtonCV = ({children, type, onClick, buttonStyle, buttonSize}) => {
+export const ButtonCV = ({children, type, onClick, buttonStyle, buttonSize}:any) => {
     const STYLES = ['btn--primary', 'btn--outline'];
     const SIZES = ['btn--medium', 'btn--large'];
     

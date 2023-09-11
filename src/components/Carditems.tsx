@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function CardItem(props) {
+function CardItem(props:any) {
   return (
     <>
       <li className='cards__item'>
         <div className='cards__item__link' to={props.path}>
           <figure className='cards__item__pic-wrap' data-category={props.label}>
-            <Link onClick={() => window.open(props.path, "_blank")}>
+            <Link onClick={() => window.open(props.path, "_blank")} to={''}>
             <img
               className='cards__item__img'
               alt='Travel Image'
