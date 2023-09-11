@@ -78,7 +78,7 @@ function Footer() {
                 <i className='fas fa-code' />
               </Link>
             </div>
-            <small className='website-rights'>KTI © 2023</small>
+            <small className='website-rights'>Kaleb Skelton © 2023</small>
             <div className='social-icons'>
               <Link
                 className='social-icon-link facebook'

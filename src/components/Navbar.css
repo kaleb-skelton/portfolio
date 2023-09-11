@@ -1,6 +1,6 @@
 .navbar {
     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-    height: 80px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,6 +8,8 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    max-width: 100%;
+    height: auto;
   }
   
   .navbar-container {
@@ -21,12 +23,13 @@
   .navbar-logo {
     color: #fff;
     justify-self: start;
-    margin-left: 20px;
+    margin-left: -52px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.65rem;
     display: flex;
     align-items: center;
+    margin-top: 6px;
   }
   
   .fa-typo3 {
@@ -42,7 +45,7 @@
     text-align: center;
     width: 60vw;
     justify-content: end;
-    margin-right: 2rem;
+    margin-right: -4rem;
   }
   
   .nav-item {
@@ -75,21 +78,32 @@
     display: none;
   }
   
+@media sceen and (max-width: 768px) {
+  .navbar {
+    max-width: 768px;
+  }
+}
+
   @media screen and (max-width: 960px) {
     .NavbarItems {
       position: relative;
     }
+    .navbar {
+      max-width: 960px;
+    }
+
   
     .nav-menu {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 110%;
       height: 90vh;
       position: absolute;
       top: 80px;
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
+      
     }
   
     .nav-menu.active {
@@ -105,6 +119,7 @@
       padding: 2rem;
       width: 100%;
       display: table;
+      margin-top: -200px;
     }
   
     .nav-links:hover {
@@ -155,4 +170,6 @@
       color: #242424;
       transition: 250ms;
     }
+
+   
   }
