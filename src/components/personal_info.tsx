@@ -1,4 +1,3 @@
-import React from 'react';
 import './personal_info.css';
 
 function personal_info() {

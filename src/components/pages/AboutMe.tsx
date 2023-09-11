@@ -1,4 +1,4 @@
-import React from 'react';
+
 import '../../App.css';
 import Personal_info from '../personal_info';
 

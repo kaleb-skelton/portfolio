@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../App.css';
 import Project_page from '../project_page';
 import PCards from '../pp_cards';
