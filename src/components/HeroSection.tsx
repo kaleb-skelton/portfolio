@@ -22,10 +22,10 @@ function HeroSection() {
                         </p>
             <div className='hero-btns'>
                 <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
-                    VIEW MY WORK
+                    VIEW MY WORK <i className="fa-solid fa-person-digging"></i> 
                 </Button>
                 <ButtonCV className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
-                    WATCH MY CV <i className='far fa-play-circle' />
+                    VIEW MY RESUME <i className='fa-solid fa-file' />
                 </ButtonCV>
             </div>
         </div>
