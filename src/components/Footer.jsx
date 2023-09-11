@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Footer.css';
 
 import { Link } from 'react-router-dom';
@@ -35,9 +35,9 @@ export const ContactUs = () => {
 function Footer() {
     const form = useRef();
   
-    const sendEmail = (e: { preventDefault: () => void; }) => {
+    const sendEmail = (e) => {
       e.preventDefault();
-  
+    
       emailjs.sendForm('service_s99wtwd', 'template_exhdgod', form.current, 'yy9EmUFAAGuR5xMeo')
         .then((result) => {
             console.log(result.text);

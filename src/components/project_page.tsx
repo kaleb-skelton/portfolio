@@ -1,4 +1,3 @@
-import React from 'react';
 import './project_page.css';
 
 function project_page() {
