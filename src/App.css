@@ -24,7 +24,7 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
- 
+  margin: 0;
 }
 
 .project-new {
@@ -34,5 +34,13 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+}
 
+
+@media only screen and (max-width: 960px) {
+  .aboutMe, .project-new {
+    font-size: 75px;
+    height: 70vh;
+    
+  }
 }

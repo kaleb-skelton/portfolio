@@ -1,4 +1,5 @@
 import './personal_info.css';
+import Resume from '../assets/Resume.pdf';
 
 function personal_info() {
     return (
@@ -11,8 +12,12 @@ function personal_info() {
               <p>My skills range from front-end development using HTML, CSS, and JavaScript to back-end development with technologies like Node.js and Express. I'm also experienced in database management, with proficiency in SQL and NoSQL databases.</p>
               <p>Throughout my learning journey, I've had the opportunity to work on a variety of exciting projects, each challenging me to learn and grow. I'm a firm believer in continuous learning, and I'm always eager to explore the latest trends and technologies in the web development landscape.</p>
               <p>When I'm not coding, you can probably find me underneath my truck, fixing something that probably wasn't broke to begin with, or at a lake fishing.</p>
-            </div>
-            <div className="about-image">
+            
+            <a href={Resume} download="MyResume" target="_blank">
+            <button className="btn-res">Download Resume</button>
+            </a>
+          </div>
+             <div className="about-image">
               <img src="./images/profile.jpg" alt="Your Name"></img>
             </div>
           </div>

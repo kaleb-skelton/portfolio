@@ -6,8 +6,8 @@ import { ButtonCV } from './ButtonCV'
 
 function HeroSection() {
     return (
-        <div className='hero-container'>
-            <video src='/videos/video-2.mp4' autoPlay loop muted />
+        
+        <div className='hero-container'>            <video src='/videos/video-2.mp4' autoPlay loop muted />
             <h1 className = "title">FULL STACK DEV</h1>
             <p>
             <a target="_blank" id="logo" className="fa-brands fa-react" href="https://react.dev/"></a>
