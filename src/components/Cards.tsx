@@ -11,28 +11,28 @@ function Cards() {
                    
                         <CardItem 
                         src="images/img-6.png"
-                        text="Build a 25 + 5 (Pomodoro) Clock"
+                        text="25 + 5 (Pomodoro) Clock - FreeCodeCamp"
                         label="Front End Development Libraries"
                         path="https://255clock-skelton.netlify.app/"
                         source="https://github.com/kaleb-skelton/25-5-clock"
                         />
                            <CardItem 
                         src="images/img-5.png"
-                        text="Build a JavaScript Calculator"
+                        text="JavaScript Calculator - FreeCodeCamp"
                         label="Front End Development Libraries"
                         path="https://fcc-ios-calc.netlify.app/"
                         source="https://github.com/kaleb-skelton/fcc-calc"  
                         />
                          <CardItem 
                         src="images/img-4.png"
-                        text="Build a Markdown Previewer"
+                        text="Markdown Previewer - FreeCodeCamp"
                         label="Front End Development Libraries"
                         path="https://markdown-previewerv2.netlify.app/"
                         source="https://github.com/kaleb-skelton/fcc-markdown-previewerv2"
                         />
                         <CardItem 
                         src="images/img-3.png"
-                        text="Build a Random Quote Machine"
+                        text="Random Quote Machine - FreeCodeCamp"
                         label="Front End Development Libraries"
                         path="https://quote-generator-fcc.netlify.app/"
                         source="https://github.com/kaleb-skelton/fcc-quote-generator"

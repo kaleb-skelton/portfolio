@@ -1,4 +1,4 @@
-import './project_page.css';
+import './project_page.css'
 
 function project_page() {
     return (
