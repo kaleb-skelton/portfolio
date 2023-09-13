@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './components/pages/Home'
 import MyProj from './components/pages/project-new'
 import AboutMe from './components/pages/AboutMe'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
  
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path='/' Component={Home} />
