@@ -1,6 +1,6 @@
 
 import './Footer.css';
-
+import {motion} from 'framer-motion';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
@@ -65,7 +65,8 @@ function Footer() {
                 type='email'
                 placeholder='example@gmail.com'
               />
-              <input id="newsletter" type="submit" value="Subscibe" />
+              <motion.input
+    whileTap={{ scale: 0.9 }} id="newsletter" type="submit" value="Subscibe" />
             </form>
           </div>
           </section>
@@ -80,6 +81,7 @@ function Footer() {
             </div>
             <small className='website-rights'>Kaleb Skelton © 2023</small>
             <div className='social-icons'>
+              <motion.div whileHover={{ scale: 1.3 }}>
               <Link
                 className='social-icon-link facebook'
                 to='https://www.facebook.com/kaleb.skelton.10'
@@ -88,6 +90,8 @@ function Footer() {
               >
                 <i className='fab fa-facebook-f' />
               </Link>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.3 }}>
               <Link
                 className='social-icon-link instagram'
                 to='https://www.instagram.com/kaleb.skelton/'
@@ -96,6 +100,8 @@ function Footer() {
               >
                 <i className='fab fa-instagram' />
               </Link>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.3 }}>  
               <Link
                 className='social-icon-link twitter'
                 to='https://www.twitter.com/skelton_kaleb'
@@ -104,6 +110,7 @@ function Footer() {
               >
                 <i className='fab fa-twitter' />
               </Link>
+              </motion.div>
            
             </div>
           </div>

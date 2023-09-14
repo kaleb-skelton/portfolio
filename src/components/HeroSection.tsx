@@ -2,6 +2,7 @@ import { Button } from './Button'
 import './HeroSection.css'
 import '../App.css'
 import { ButtonCV } from './ButtonCV'
+import {motion} from 'framer-motion'
 
 
 function HeroSection() {
@@ -38,15 +39,15 @@ function HeroSection() {
 
             <p>
             
-            <a target="_blank" id="logo" className="fa-brands fa-react" href="https://react.dev/"></a>
-            <a target="_blank" id="logo" className="fa-brands fa-js" href="https://www.javascript.com/"></a>
-            <a target="_blank" id="logo" className="fa-brands fa-html5" href="https://developer.mozilla.org/en-US/docs/Web/HTML"></a>
-            <a target="_blank" id="logo" className="fa-brands fa-css3" href="https://developer.mozilla.org/en-US/docs/Web/CSS"></a>
-            <a target="_blank" id="logo" className="fa-brands fa-node" href="https://nodejs.org/en/about"></a>
-            <a target="_blank" id="logo" className="fa-brands fa-python" href="https://www.python.org/"></a>
-            <a target="_blank" id="logo" className="fa-brands fa-github" href="https://github.com/kaleb-skelton"></a>
-            <a target="_blank" id="logo" className="fa-brands fa-raspberry-pi" href="https://www.raspberrypi.com/"></a>
-            <a target="_blank" id="logo" className="fa-brands fa-free-code-camp" href="https://www.freecodecamp.org/"></a>
+            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-react" href="https://react.dev/"></motion.a>
+            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-js" href="https://www.javascript.com/"></motion.a>
+            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-html5" href="https://developer.mozilla.org/en-US/docs/Web/HTML"></motion.a>
+            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-css3" href="https://developer.mozilla.org/en-US/docs/Web/CSS"></motion.a>
+            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-node" href="https://nodejs.org/en/about"></motion.a>
+            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-python" href="https://www.python.org/"></motion.a>
+            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-github" href="https://github.com/kaleb-skelton"></motion.a>
+            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-raspberry-pi" href="https://www.raspberrypi.com/"></motion.a>
+            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-free-code-camp" href="https://www.freecodecamp.org/"></motion.a>
                         </p>
             <div className='hero-btns'>
                 <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
