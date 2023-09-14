@@ -4,11 +4,16 @@
 
 .btn {
     padding: 8px 20px;
-    border-radius: 2px;
+    border-radius: 10px;
     outline: none;
     border: none;
     cursor: pointer;
    
+}
+.btn:hover {
+    transition: all 0.3s ease-out;
+    background-color: black;
+    color: white;
 }
 .btn-res {
     padding: 8px 20px;

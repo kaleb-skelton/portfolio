@@ -1,12 +1,30 @@
 import CardItem from './Carditems'
 import './Cards.css'
+import {motion, useScroll, useTransform} from 'framer-motion' 
+import { useRef } from 'react'  
 
 function Cards() {
+    const ref = useRef<HTMLDivElement>(null);
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["0 1", "1.13 1"],
+    });
+    const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
+
     return (
+       
         <div className='cards'>
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <h1>Check Out These EPIC Projects!</h1>
+                    <motion.div
+            ref={ref}
+            style={{
+                scale: scaleProgress,
+                opacity: scaleProgress,
+            }}
+            
+        >
                     <ul className="cards__items">
                    
                         <CardItem 
@@ -55,9 +73,11 @@ function Cards() {
                         />
                        
                     </ul>
+                    </motion.div>
                 </div>
             </div>        
         </div>
+        
     )
 }
 

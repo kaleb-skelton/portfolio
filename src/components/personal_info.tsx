@@ -1,11 +1,27 @@
 import './personal_info.css';
 import Resume from '../assets/Resume.pdf';
+import {motion, useScroll, useTransform} from 'framer-motion' 
+import { useRef } from 'react'  
 
 function personal_info() {
+  const ref = useRef<HTMLDivElement>(null);
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["0 1", "1.13 1"],
+    });
+    const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
     return (
       
         <section id="about">
         <div className="container">
+        <motion.div
+            ref={ref}
+            style={{
+                scale: scaleProgress,
+                opacity: scaleProgress,
+            }}
+            
+        >
           <div className="about-content">
             <div className="about-text">
               <h2>About Me</h2>
@@ -22,6 +38,7 @@ function personal_info() {
               <img src="./images/profile.jpg" alt="Your Name"></img>
             </div>
           </div>
+        </motion.div>
         </div>
       </section>
       
