@@ -14,7 +14,7 @@ function HeroSection() {
         
 
         <div className='hero-container'>   
-        <video src='/videos/video-2.mp4' autoPlay loop muted />
+       
 
      <svg id="text" width="631" height="124" viewBox="0 0 631 124" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M9 12C9 28.054 13.0126 43.7498 14.2222 59.7778C15.4917 76.5984 19 93.0382 19 110" stroke="#FEFEFE" strokeWidth="10" strokeLinecap="round"/>

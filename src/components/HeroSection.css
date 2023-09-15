@@ -112,6 +112,13 @@ video {
   .fa-file {
     margin-left: 4px;
   }
+
+  @media screen and (min-width: 961px) {
+    .hero-container {
+      width: 100vw;
+      background: url('/images/ss_bac_vid.png') center center/cover no-repeat;
+    }
+  }
   
   @media screen and (max-width: 960px) {
     .hero-container {
