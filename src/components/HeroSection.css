@@ -116,6 +116,7 @@ video {
   @media screen and (max-width: 960px) {
     .hero-container {
       width: 100vw;
+      background: url('/images/ss_bac_vid.png') center center/cover no-repeat; 
     }
     video {
       width: 100vw;
