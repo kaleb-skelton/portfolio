@@ -155,8 +155,10 @@ video {
   @media screen and (max-width: 960px) {
    
    #fr {
-      width: 75%;
-      height: 70%;
+      max-width: 75%;
+      width: fit-content;
+      min-height: fit-content;
+      
       top: 20%;
       left: 13.5%;
    }
