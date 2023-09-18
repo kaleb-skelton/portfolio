@@ -52,7 +52,7 @@ function HeroSection() {
         document.getElementById('fr')!.style.visibility = 'visible'
         document.getElementById('close')!.style.visibility = 'visible'
     }
-        const closeFrame = () => {
+    const closeFrame = () => {
         document.getElementById('fr')!.style.visibility = 'hidden'
         document.getElementById('close')!.style.visibility = 'hidden'
     }
@@ -90,7 +90,7 @@ function HeroSection() {
             id="fr"
             name="myFrame"
             src="about:blank"
-            
+
             >
             </iframe>
             <button onClick={closeFrame} id="close">X</button>

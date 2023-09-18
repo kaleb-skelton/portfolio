@@ -153,18 +153,11 @@ video {
   }
   
   @media screen and (max-width: 960px) {
-    #fr {
-      width: 100%;
-      height: 90%;
-      top: 10%;
-      left: 0%;
-      z-index: 1;
-      position: fixed;
-      visibility: hidden;
+   
     }
     #close {
       position: fixed;
-      top:9.5%;
+      top: 9.5%;
       right: -3.5%;
       margin: 1rem;
       font-size: 1.5rem;
