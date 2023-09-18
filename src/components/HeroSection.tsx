@@ -7,52 +7,52 @@ import {motion} from 'framer-motion'
 
 function HeroSection() {
 
-    const react = (event: React.MouseEvent<HTMLElement>) => {
+    const react = () => {
         document.getElementById('fr')!.setAttribute('src', "https://react.dev/") 
         document.getElementById('fr')!.style.visibility = 'visible'
         document.getElementById('close')!.style.visibility = 'visible'
     }
-    const js = (event: React.MouseEvent<HTMLElement>) => {
+    const js = () => {
         document.getElementById('fr')!.setAttribute('src', "/images/www.javascript.com_.png") 
         document.getElementById('fr')!.style.visibility = 'visible'
         document.getElementById('close')!.style.visibility = 'visible'
     }
-    const html = (event: React.MouseEvent<HTMLElement>) => {
+    const html = () => {
         document.getElementById('fr')!.setAttribute('src', "/images/html.com_html5_.png") 
         document.getElementById('fr')!.style.visibility = 'visible'
         document.getElementById('close')!.style.visibility = 'visible'
     }
-    const css = (event: React.MouseEvent<HTMLElement>) => {
+    const css = () => {
         document.getElementById('fr')!.setAttribute('src', "/images/www.w3schools.com_css_.png") 
         document.getElementById('fr')!.style.visibility = 'visible'
         document.getElementById('close')!.style.visibility = 'visible'
     }
-    const node = (event: React.MouseEvent<HTMLElement>) => {
+    const node = () => {
         document.getElementById('fr')!.setAttribute('src', "https://nodejs.org/en/") 
         document.getElementById('fr')!.style.visibility = 'visible'
         document.getElementById('close')!.style.visibility = 'visible'
     }
-    const python = (event: React.MouseEvent<HTMLElement>) => {
+    const python = () => {
         document.getElementById('fr')!.setAttribute('src', "/images/www.python.org_.png") 
         document.getElementById('fr')!.style.visibility = 'visible'
         document.getElementById('close')!.style.visibility = 'visible'
     }
-    const github = (event: React.MouseEvent<HTMLElement>) => {
+    const github = () => {
         document.getElementById('fr')!.setAttribute('src', "/images/github.com_kaleb-skelton.png") 
         document.getElementById('fr')!.style.visibility = 'visible'
         document.getElementById('close')!.style.visibility = 'visible'
     }
-    const raspberry = (event: React.MouseEvent<HTMLElement>) => {
+    const raspberry = () => {
         document.getElementById('fr')!.setAttribute('src', "/images/www.raspberrypi.com_.png")
         document.getElementById('fr')!.style.visibility = 'visible'
         document.getElementById('close')!.style.visibility = 'visible'
     }
-    const freecodecamp = (event: React.MouseEvent<HTMLElement>) => {
+    const freecodecamp = () => {
         document.getElementById('fr')!.setAttribute('src', "/images/www.freecodecamp.org_.png")
         document.getElementById('fr')!.style.visibility = 'visible'
         document.getElementById('close')!.style.visibility = 'visible'
     }
-        const closeFrame = (event: React.MouseEvent<HTMLElement>) => {
+        const closeFrame = () => {
         document.getElementById('fr')!.style.visibility = 'hidden'
         document.getElementById('close')!.style.visibility = 'hidden'
     }
@@ -90,6 +90,7 @@ function HeroSection() {
             id="fr"
             name="myFrame"
             src="about:blank"
+            
             >
             </iframe>
             <button onClick={closeFrame} id="close">X</button>
