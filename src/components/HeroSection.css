@@ -160,7 +160,7 @@ video {
       top: 20%;
       left: 15%;
       z-index: 1;
-      position: fixed;
+     
       visibility: hidden;
     }
 
