@@ -154,7 +154,7 @@ video {
   
   @media screen and (max-width: 960px) {
    
-    }
+    
     #close {
       position: fixed;
       top: 9.5%;
@@ -232,4 +232,4 @@ video {
   }
     
 
-  
+}
