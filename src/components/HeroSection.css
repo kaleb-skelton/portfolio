@@ -154,12 +154,18 @@ video {
   
   @media screen and (max-width: 960px) {
    
-   
+   #fr {
+    width: 75%;
+    height: 70%;
+    top: 20%;
+    left: 12.5%;
+  
+   }
 
     #close {
       position: fixed;
-      top: 18%;
-      right: 7%;
+      top: 17.6%;
+      right: 8%;
       margin: 1rem;
       font-size: 1.5rem;
       width: 4rem;
