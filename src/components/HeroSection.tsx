@@ -7,7 +7,55 @@ import {motion} from 'framer-motion'
 
 function HeroSection() {
 
-
+    const react = (event: React.MouseEvent<HTMLElement>) => {
+        document.getElementById('fr')!.setAttribute('src', "https://react.dev/") 
+        document.getElementById('fr')!.style.visibility = 'visible'
+        document.getElementById('close')!.style.visibility = 'visible'
+    }
+    const js = (event: React.MouseEvent<HTMLElement>) => {
+        document.getElementById('fr')!.setAttribute('src', "/images/www.javascript.com_.png") 
+        document.getElementById('fr')!.style.visibility = 'visible'
+        document.getElementById('close')!.style.visibility = 'visible'
+    }
+    const html = (event: React.MouseEvent<HTMLElement>) => {
+        document.getElementById('fr')!.setAttribute('src', "/images/html.com_html5_.png") 
+        document.getElementById('fr')!.style.visibility = 'visible'
+        document.getElementById('close')!.style.visibility = 'visible'
+    }
+    const css = (event: React.MouseEvent<HTMLElement>) => {
+        document.getElementById('fr')!.setAttribute('src', "/images/www.w3schools.com_css_.png") 
+        document.getElementById('fr')!.style.visibility = 'visible'
+        document.getElementById('close')!.style.visibility = 'visible'
+    }
+    const node = (event: React.MouseEvent<HTMLElement>) => {
+        document.getElementById('fr')!.setAttribute('src', "https://nodejs.org/en/") 
+        document.getElementById('fr')!.style.visibility = 'visible'
+        document.getElementById('close')!.style.visibility = 'visible'
+    }
+    const python = (event: React.MouseEvent<HTMLElement>) => {
+        document.getElementById('fr')!.setAttribute('src', "/images/www.python.org_.png") 
+        document.getElementById('fr')!.style.visibility = 'visible'
+        document.getElementById('close')!.style.visibility = 'visible'
+    }
+    const github = (event: React.MouseEvent<HTMLElement>) => {
+        document.getElementById('fr')!.setAttribute('src', "/images/github.com_kaleb-skelton.png") 
+        document.getElementById('fr')!.style.visibility = 'visible'
+        document.getElementById('close')!.style.visibility = 'visible'
+    }
+    const raspberry = (event: React.MouseEvent<HTMLElement>) => {
+        document.getElementById('fr')!.setAttribute('src', "/images/www.raspberrypi.com_.png")
+        document.getElementById('fr')!.style.visibility = 'visible'
+        document.getElementById('close')!.style.visibility = 'visible'
+    }
+    const freecodecamp = (event: React.MouseEvent<HTMLElement>) => {
+        document.getElementById('fr')!.setAttribute('src', "/images/www.freecodecamp.org_.png")
+        document.getElementById('fr')!.style.visibility = 'visible'
+        document.getElementById('close')!.style.visibility = 'visible'
+    }
+        const closeFrame = (event: React.MouseEvent<HTMLElement>) => {
+        document.getElementById('fr')!.style.visibility = 'hidden'
+        document.getElementById('close')!.style.visibility = 'hidden'
+    }
 
     return (
         
@@ -38,16 +86,23 @@ function HeroSection() {
 </svg>
 
             <p>
-            
-            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-react" href="https://react.dev/"></motion.a>
-            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-js" href="https://www.javascript.com/"></motion.a>
-            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-html5" href="https://developer.mozilla.org/en-US/docs/Web/HTML"></motion.a>
-            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-css3" href="https://developer.mozilla.org/en-US/docs/Web/CSS"></motion.a>
-            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-node" href="https://nodejs.org/en/about"></motion.a>
-            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-python" href="https://www.python.org/"></motion.a>
-            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-github" href="https://github.com/kaleb-skelton"></motion.a>
-            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-raspberry-pi" href="https://www.raspberrypi.com/"></motion.a>
-            <motion.a whileHover={{ scale: 1.2 }} target="_blank" id="logo" className="fa-brands fa-free-code-camp" href="https://www.freecodecamp.org/"></motion.a>
+            <iframe 
+            id="fr"
+            name="myFrame"
+            src="about:blank"
+            >
+            </iframe>
+            <button onClick={closeFrame} id="close">X</button>
+            <motion.button whileHover={{ scale: 1.2 }} onClick={react} className="fa-brands fa-react" id="logo" ></motion.button>
+            <motion.button whileHover={{ scale: 1.2 }} onClick={js} className="fa-brands fa-js" id="logo" ></motion.button>
+            <motion.button whileHover={{ scale: 1.2 }} onClick={html} className="fa-brands fa-html5" id="logo"></motion.button>
+            <motion.button whileHover={{ scale: 1.2 }} onClick={css} className="fa-brands fa-css3" id="logo"></motion.button>
+            <motion.button whileHover={{ scale: 1.2 }} onClick={node} className="fa-brands fa-node" id="logo"></motion.button>
+            <motion.button whileHover={{ scale: 1.2 }} onClick={python} className="fa-brands fa-python" id="logo"></motion.button>
+            <motion.button whileHover={{ scale: 1.2 }} onClick={github} className="fa-brands fa-github" id="logo"></motion.button>
+            <motion.button whileHover={{ scale: 1.2 }} onClick={raspberry} className="fa-brands fa-raspberry-pi" id="logo"></motion.button>
+            <motion.button whileHover={{ scale: 1.2 }} onClick={freecodecamp} className="fa-brands fa-free-code-camp" id="logo"></motion.button>
+
                         </p>
             <div className='hero-btns'>
                 <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
@@ -62,4 +117,4 @@ function HeroSection() {
     )
 }
 
-export default HeroSection
+export default HeroSection;

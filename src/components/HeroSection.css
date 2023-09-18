@@ -7,6 +7,35 @@ video {
   
   }
 
+  #fr {
+    width: 50%;
+    height: 70%;
+    top: 20%;
+    left: 25%;
+    z-index: 1;
+    position: fixed;
+    visibility: hidden;
+  }
+
+  #close {
+    position: fixed;
+    top: 17.5%;
+    right: 23.8%;
+    margin: 1rem;
+    font-size: 1.5rem;
+    width: 4rem;
+    background-color: lightgray;
+    cursor: pointer;
+    visibility: hidden;
+    z-index: 2;
+  }
+
+  #close:hover {
+    background-color: red;
+    color: black;
+  }
+
+
   #text {
     margin-bottom: 40px;
     stroke-dasharray: 250;
@@ -28,9 +57,9 @@ video {
     color: white;
     font-size: 3rem;
     margin: 0 .5rem;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
-
+   
   .fa-react:hover {
     color: #61DBFB;
   }
@@ -67,6 +96,8 @@ video {
     text-decoration: none;
     font-size: 3rem;
     margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
   }
   
   .hero-container {
@@ -152,10 +183,12 @@ video {
       margin-top: 0px;
       color: #fff;
       font-size: 32px;
-    margin: 0rem;
-    
+      margin: 0rem;
+      background-color: transparent;
+      border: none;
       }
-      .fa-react:hover {
+
+  .fa-react:hover {
     color: #61DBFB;
   }
   .fa-js:hover {
